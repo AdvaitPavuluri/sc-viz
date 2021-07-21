@@ -4,7 +4,7 @@ def _preflight_check(adata, coordinate_space):
     """"""
     assert coordinate_space is in adata.obsm_keys(), "Please choose from {}".format(adata.obsm_keys())
 
-def plot_subset(adata, cell_index, coordinate_space='X_emb', labels=["monocytes","neutrophils"], color=["blue", "red"], alpha=0.2):
+def plot_subset(adata, cell_index, coordinate_space='X_emb', labels=["monocytes","neutrophils"], color=["blue", "red", "yellow", "green"], alpha=0.2):
     """
     Function for plotting a subset of cells from AnnData (adata).
     Parameters:
